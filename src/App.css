@@ -1,0 +1,43 @@
+#root {
+  max-width: 100vw;
+  text-align: center;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.video-player {
+  width: 70%;
+  height: auto;
+  margin: 0 auto;
+}
+
+@keyframes text-scroller-animation{
+  from {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+
+  to {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+
+.HContainer {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  width: 100%;
+  place-content: center;
+}
+
+.text-scroller {
+  animation-name: text-scroller-animation;
+  animation-duration: 10s;
+  overflow: hidden;
+  animation-iteration-count: infinite;
+}
