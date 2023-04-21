@@ -1,3 +1,6 @@
+const consoleMessage = "If you're reading this then you and I are probably kindred spirits :) \n\nIf you want to know how this was made message me on discord at BardOfYore#6608 or checkout the repo at https://github.com/elgonio/project-auroth" 
+
+console.log(consoleMessage)
 import { useState } from 'react'
 import './App.css'
 
@@ -70,7 +73,7 @@ function App() {
   }
 
   const musicStop = () => {
-    console.log('pausin.')
+    clearTimeout(timeout);
     try {
       music.pause();
       lofiPurge.pause();
